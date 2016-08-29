@@ -1,0 +1,49 @@
+{
+  "name": "ingvarr-webpack-boilerplate",
+  "version": "0.0.1",
+  "description": "Simple webpack dev and production build enviroment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node staticServer.js",
+    "dev": "cross-env NODE_ENV=development node server.js",
+    "build": "webpack --config webpack.config.production.js --progress",
+    "build:stats": "webpack --config webpack.config.production.js --json >> build-statistic.json"
+  },
+  "author": "Igor Emets",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.0",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-runtime": "^6.9.2",
+    "concurrent-transform": "^1.0.0",
+    "cross-env": "^1.0.8",
+    "css-loader": "^0.23.1",
+    "eslint": "^3.0.1",
+    "eslint-loader": "^1.4.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "ignore-loader": "^0.1.1",
+    "image-webpack-loader": "^1.8.0",
+    "imports-loader": "^0.6.5",
+    "mkpath": "^1.0.0",
+    "node-sass": "^3.8.0",
+    "node-static": "^0.7.8",
+    "postcss-loader": "^0.9.1",
+    "resolve-url-loader": "^1.6.0",
+    "rimraf": "^2.5.3",
+    "sass-loader": "^4.0.0",
+    "script-loader": "^0.7.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "throttle-debounce": "^1.0.1"
+  }
+}
